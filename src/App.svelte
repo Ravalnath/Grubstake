@@ -26,13 +26,14 @@
 	}
 
 	.gs-intro-container{
-		margin: 2rem 0rem;
+		background: #F7F7FD;
 		min-height: 30rem;
 	}
 
 	.gs-intro-div{
 		font-size: 2rem;
     	text-align: center;
+		margin-top: 2rem;
 	}
 
 	.gs-button-div{
@@ -106,7 +107,7 @@
 			  <button class="button is-link is-medium"><Icon data={twitter} scale="1.5"/>&nbsp;Login with Twitter</button>
 		  </div>
 	  </div>
-	  <div class="column">
+	  <div class="column" style="margin:auto;">
 		  <div class="gs-intro-img-div">
 			<img class="gs-intro-img" src="/Trend.svg" alt="Grubstake">
 		  </div>
