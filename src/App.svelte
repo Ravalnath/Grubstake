@@ -49,6 +49,19 @@
 	.gs-intro-img{
 		max-height: 24rem;
 	}
+
+	.gs-primary-color{
+		color: #3273dc;
+	}
+
+	.gs-secondary-color{
+		color: #f14668;
+	}
+
+	.content{
+		display: flex;
+    	justify-content: center;
+	}
 </style>
 
   <nav class="navbar is-fixed-top gs-navbar-shadow">
@@ -100,8 +113,15 @@
   <div class="columns gs-intro-container">
 	  <div class="column" style="margin:auto;">
 		  <div class="gs-intro-div">
-				Earn <b style="color: #3273dc;">money</b> while engaging with your favourite 
-				<b style="color: #f14668;">#trends</b>
+				Earn <b class="gs-primary-color">money</b> while engaging with your favourite 
+				<b class="gs-secondary-color">#trends</b>
+		  </div>
+		  <div class="content">
+			  <ul>
+				  <li>Earn at the <b class="gs-secondary-color">comfort of your home</b>, gym, park or wherever you like!</li>
+				  <li><b>Sign Up</b> and Be a part of <b class="gs-primary-color">Grubstake community</b>
+					 to improve social media engagement!</li>
+			  </ul>
 		  </div>
 		  <div class="gs-button-div">
 			  <button class="button is-link is-medium"><Icon data={twitter} scale="1.5"/>&nbsp;Login with Twitter</button>
