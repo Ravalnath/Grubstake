@@ -14,15 +14,15 @@ export function copyToClipboard(id) {
 // Generates the tweet url string which can be used for click-to-tweet functionality
 export function encodeTweet(text, url, hashtags, username) {
     let data = {
-        baseUrl : 'https://twitter.com/intent/tweet?',
-        params : { 
-            'text':text,
-            'url':url,
-            'hashtags':hashtags,
-            'via':username,
-            }
+        baseUrl: 'https://twitter.com/intent/tweet?',
+        params: {
+            'text': text,
+            'url': url,
+            'hashtags': hashtags,
+            'via': username,
         }
-    let query = data.baseUrl 
+    }
+    let query = data.baseUrl
     for (let d in data.params) {
         if (data.params[d] !== '')
             query += encodeURIComponent(d) + '=' + encodeURIComponent(data.params[d]) + '&';
