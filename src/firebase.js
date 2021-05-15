@@ -16,13 +16,3 @@ firebase.initializeApp(firebaseConfig);
 export const auth = firebase.auth();
 export const twitterProvider = new firebase.auth.TwitterAuthProvider();
 export const db = firebase.firestore();
-
-// function twitterSignInPopup(provider) {
-//     // [START auth_twitter_signin_popup]
-//     firebase
-//       .auth()
-//       .signInWithPopup(provider)
-//       .then((result) => {
-//         var user = result.user;
-//       }).catch((error) => {});
-//   }

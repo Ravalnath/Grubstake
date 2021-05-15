@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "bulma": "^0.9.2",
+    "bulma-toast": "^2.3.0",
     "firebase": "^8.4.3",
     "rxfire": "^4.0.0",
     "rxjs": "^6.6.7",
