@@ -27,6 +27,11 @@
   const toggleNav = () => {
     mobile = !mobile;
   };
+
+  function closeNav(){
+    mobile = false;
+  }
+
 </script>
 
 <svelte:head>
@@ -38,7 +43,7 @@
     <nav class="navbar is-fixed-top gs-navbar-shadow">
       <!--Logo-->
       <div class="navbar-brand">
-        <Link class="navbar-item" to="/">
+        <Link class="navbar-item" to="/" on:click={closeNav}>
           <img src="/logo.svg" width="142" alt="Grubstake" height="28" />
         </Link>
         <a class="navbar-burger" class:is-active={mobile} id="burger" on:click={toggleNav}>
@@ -51,15 +56,15 @@
       <div class="navbar-menu" class:is-active={mobile} id="menu">
         <div class="navbar-end">
           <!--Item-->
-          <Link class="navbar-item" to="campaign">
+          <Link class="navbar-item" to="campaign" on:click={toggleNav}>
             <Icon data={bullhorn} />&nbsp;Campaign
           </Link>
           <!--Item-->
-          <Link class="navbar-item" to="/">
+          <Link class="navbar-item" to="/" on:click={toggleNav}>
             <Icon data={questionCircle} />&nbsp;FAQ
           </Link>
           <!--Item-->
-          <Link class="navbar-item" to="/">
+          <Link class="navbar-item" to="/" on:click={toggleNav}>
             <Icon data={lifeSaver} />&nbsp;Help
           </Link>
           <!--Item-->

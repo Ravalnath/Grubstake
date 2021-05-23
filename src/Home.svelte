@@ -1,16 +1,16 @@
 <script>
-import Icon from "svelte-awesome";
-import { twitter } from "svelte-awesome/icons";
-import { createEventDispatcher } from 'svelte';
+	import Icon from "svelte-awesome";
+	import { twitter } from "svelte-awesome/icons";
+	import { createEventDispatcher } from 'svelte';
 
-const dispatch = createEventDispatcher();
-export let Auth;
+	const dispatch = createEventDispatcher();
+	export let Auth;
 
-function triggerLogin() {
-	dispatch('login', {
-		text: 'Triggered'
-	});
-}
+	function triggerLogin() {
+		dispatch('login', {
+			text: 'Triggered'
+		});
+	}
 </script>
 
 <div class="columns gs-intro-container">

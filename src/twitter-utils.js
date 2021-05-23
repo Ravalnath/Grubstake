@@ -27,5 +27,6 @@ export function encodeTweet(text, url, hashtags, username) {
         if (data.params[d] !== '')
             query += encodeURIComponent(d) + '=' + encodeURIComponent(data.params[d]) + '&';
     }
-    return query.slice(0, -1)
+
+    return query.slice(0, -1);
 }

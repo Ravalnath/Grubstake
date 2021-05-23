@@ -3,7 +3,7 @@
 	import "bulma/css/bulma.min.css";
 	import NavBar from "./NavBar.svelte";
   	let now = new Date(), month, day, year;
-  let currentYear = now.getFullYear();
+	let currentYear = now.getFullYear();
 </script>
 
 <NavBar />
