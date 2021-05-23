@@ -51,7 +51,7 @@
       <div class="navbar-menu" class:is-active={mobile} id="menu">
         <div class="navbar-end">
           <!--Item-->
-          <Link class="navbar-item" to="Campaign">
+          <Link class="navbar-item" to="campaign">
             <Icon data={bullhorn} />&nbsp;Campaign
           </Link>
           <!--Item-->
@@ -108,7 +108,7 @@
       <Home Auth={user} on:login={login} />
     </Route>
     <Route path="campaign" primary={false}>
-      <Campaign />
+      <Campaign Auth={user} />
     </Route>
   </main>
 </Router>

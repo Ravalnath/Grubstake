@@ -17,8 +17,7 @@ function triggerLogin() {
 	<div class="column" style="margin:auto;">
 		<div class="gs-intro-div">
 			Earn <b class="gs-primary-color">money</b> while engaging with your
-			favourite 
-			<b class="gs-secondary-color">#trends</b>
+			favourite <b class="gs-secondary-color">#trends</b>
 		</div>
 		<div class="content">
 			<ul>
@@ -47,43 +46,3 @@ function triggerLogin() {
 		</div>
 	</div>
 </div>
-
-<style>
-	.gs-intro-container {
-		background: #f7f7fd;
-		min-height: 30rem;
-	}
-
-	.gs-intro-div {
-		font-size: 2rem;
-		text-align: center;
-		margin-top: 2rem;
-	}
-
-	.gs-button-div {
-		text-align: center;
-		margin-top: 2rem;
-	}
-
-	.gs-intro-img-div {
-		padding: 2rem;
-		text-align: center;
-	}
-
-	.gs-intro-img {
-		max-height: 24rem;
-	}
-
-	.gs-primary-color {
-		color: #3273dc;
-	}
-
-	.gs-secondary-color {
-		color: #f14668;
-	}
-
-	.content {
-		display: flex;
-		justify-content: center;
-	}
-</style>
