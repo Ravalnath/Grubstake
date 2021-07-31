@@ -3,7 +3,7 @@
     import { arrowRight } from "svelte-awesome/icons";
     import { encodeTweet } from './twitter-utils';
 
-    export let buttonText, hashtags, name, rules, status, text, type, url, username;
+    export let buttonText, hashtags, name, rules, status, text, type, url, username, subType;
     let  rulesArray = rules.split('|');
 </script>
 
@@ -30,10 +30,17 @@
           </div>
         </div>
         <footer class="card-footer">
-          <button class="card-footer-item button is-info" on:click="{window.open(encodeTweet(text, url, hashtags, username), "_blank")}">
-              {buttonText}&nbsp;
-              <Icon data={arrowRight}/>
-          </button>
+            {#if type == 'Twitter' && subType =='create'}
+                <button class="card-footer-item button is-info" on:click="{window.open(encodeTweet(text, url, hashtags, username), "_blank")}">
+                    {buttonText}&nbsp;
+                    <Icon data={arrowRight}/>
+                </button>
+            {:else}
+                <button class="card-footer-item button is-info" on:click="{window.open(url, "_blank")}">
+                    {buttonText}&nbsp;
+                    <Icon data={arrowRight}/>
+                </button>
+            {/if}
         </footer>
       </div>
 </div>
@@ -52,10 +59,16 @@
 
     .card-content {
         padding-top: 0rem;
+        min-height: 8rem;
     }
 
     .card-header-title {
-        font-weight: 600; 
+        font-weight: 600;
+        padding: 0.5rem;
+    }
+
+    .card-header-icon{
+        padding: 0.5rem;
     }
 
     .content {

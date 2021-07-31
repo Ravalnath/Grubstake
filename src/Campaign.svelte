@@ -34,11 +34,9 @@
 	</div>
 </div>
 {:else}
-<div class="gs-intro-container">
+<div class="columns gs-intro-container">
     {#each $campaigns as campaign,  i}
-        <div class="columns">
             <CampaignItem {...campaign}/>
-        </div>
 	{/each}
 </div>
 {/if}
