@@ -4,7 +4,6 @@
     import { encodeTweet } from './twitter-utils';
 
     export let buttonText, hashtags, name, rules, status, text, type, url, username, subType;
-    let  rulesArray = rules.split('|');
 </script>
 
 
@@ -23,7 +22,7 @@
         <div class="card-content">
           <div class="content">
             <ul>
-                {#each rulesArray as rule}
+                {#each rules as rule}
                 <li>{rule}</li>
                 {/each}
             </ul>
